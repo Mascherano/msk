@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@index');
+
+Route::post('/contactar', 'EmailController@contact')->name('contact');

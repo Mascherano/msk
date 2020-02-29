@@ -89,7 +89,7 @@ body {
     color: #da0128 !important;
 }
 
-.color-rojo{
+.color-rojo {
     color: #da0128 !important;
 }
 
@@ -122,8 +122,8 @@ body {
     min-height: 45rem;
 }
 
-.click-layer{
-    position:absolute;
+.click-layer {
+    position: absolute;
     width: 100%;
     height: 100%;
 }
@@ -173,25 +173,67 @@ body {
     border-radius: 10px;
 }
 
-.tm-banner-text-container {
-    position: absolute;
-    z-index: 1000;
-    color: #ffffff;
-    text-align: center;
-    max-width: 100%;
-    padding-top: 15rem;
-    padding-bottom: 5rem;
+@media (min-width: 768px) {
+    .tm-banner-text-container {
+        position: absolute;
+        z-index: 1000;
+        color: #ffffff;
+        text-align: center;
+        max-width: 100%;
+        padding-top: 15rem;
+        padding-bottom: 5rem;
+    }
+
+    .tm-banner-text-container-btm {
+        position: absolute;
+        z-index: 1000;
+        color: #ffffff;
+        text-align: center;
+        max-width: 100%;
+        padding-top: 12rem;
+        padding-bottom: 5rem;
+    }
+    .texto-carta {
+        font-size: 1.5rem;
+    }
 }
 
-.tm-banner-text-container-btm {
-    position: absolute;
-    z-index: 1000;
-    color: #ffffff;
-    text-align: center;
-    max-width: 100%;
-    padding-top: 12rem;
-    padding-bottom: 5rem;
+@media (max-width: 767px){
+    .tm-banner-text-container {
+        position: absolute;
+        z-index: 1000;
+        color: #ffffff;
+        text-align: center;
+        max-width: 100%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }    
+    .tm-banner-text-container-btm {
+        position: absolute;
+        z-index: 1000;
+        color: #ffffff;
+        text-align: center;
+        max-width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+    .tm-banner-text-container-btm h1{
+        font-size: 1.5rem;
+    }
+    .tm-banner-text-container-btm h2{
+        font-size: 1.3rem;
+    }
+    .tm-banner-text-container-btm .lista-btm li {
+        list-style-type: none;
+        font-size: 1 rem;
+    }
+    .texto-carta{
+        font-size: 1.2rem;
+    }
 }
+
+
+
 
 .semi-transparent {
     background-color: rgba(255, 255, 255, 0.5)
@@ -217,9 +259,9 @@ body {
     background-position: center;
     background-size: cover;
 }
-.texto-carta{
-font-size: 1.5rem;;
-}
+
+
+
 .imagen-banda-2 {
     background-image: url("../images/9.jpeg");
     height: 15rem;
@@ -241,62 +283,65 @@ font-size: 1.5rem;;
     background-size: cover;
 }
 
-.footer{
+.footer {
     background-color: #222222;
-    
+
 }
 
 .flip-card {
     background-color: transparent;
     height: 20rem;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  .lista{
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+.lista {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
+}
 
-  .lista-btm{
+.lista-btm {
     list-style-type: none;
     font-size: 1.5rem;
-  }
+}
 
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
+/* This container is needed to position the front and back side */
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
     background-color: #bbb;
     color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
+}
+
+/* Style the back side */
+.flip-card-back {
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
-  }
+}

@@ -9,14 +9,14 @@
             </div>
             <div class="col-md-6 d-flex justify-content-center">
 
-                <form class="p-4 w-75">
+                <form class="p-4 w-75" action={{route('contact')}} method="POST">
+                    {{ csrf_field() }}
                     <div class='signup rounded'>
                         <h5 class="text-center font-weight-light mb-4">¿Quieres saber más acerca de esta tecnología?</h5>
-                        <input class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Nombre:' />
-                        <input class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Empresa:' />
-                        <input class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Correo:' />
-                        <input class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Teléfono:' />
-                        <input class="form-control-sm btn btn-red" type='submit' placeholder='Enviar' />
+                        <input name="nombre" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Nombre:' required />
+                        <input name="email" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Correo:' required/>
+                        <input name="telefono" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Teléfono:' required/>
+                        <input class="form-control-sm btn btn-red" id="btn-contact" type='submit' placeholder='Enviar' />
                     </div>
                     <div id="nuestros-servicios" ></div>
 
@@ -209,14 +209,14 @@
                 </div>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <form class="p-4 w-75">
+                <form class="p-4 w-75" action={{route('contact')}} method="POST">
+                    {{ csrf_field() }}
                     <div class='signup rounded'>
                         <h5 class="text-center font-weight-light mb-4">¿Quieres saber más acerca de esta tecnología?</h5>
-                        <input class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Nombre:' />
-                        <input class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Empresa:' />
-                        <input class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Correo:' />
-                        <input class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Teléfono:' />
-                        <input class="form-control-sm btn btn-red" type='submit' placeholder='Enviar' />
+                        <input name="nombre" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Nombre:' required />
+                        <input name="email" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Correo:' required/>
+                        <input name="telefono" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Teléfono:' required/>
+                        <input class="form-control-sm btn btn-red" id="btn-contact" type='submit' placeholder='Enviar' />
                     </div>
                 </form>
 
