@@ -8,7 +8,7 @@ use Mail;
 class EmailController extends Controller
 {
     public function contact(Request $request){
-        dd('debug');
+        
         $subject = "Cotización de Flete";
         $for = env('MAIL_USERNAME');
 
