@@ -11,7 +11,7 @@ class EmailController extends Controller
         
         $subject = "Cotización de Flete";
         $for = env('MAIL_USERNAME');
-
+        dd(env('MAIL_USERNAME'));
         Mail::send('email',$request->all(), function($msj) use($subject,$for, $request){
             
             $msj->from($request->email, $request->nombre);
