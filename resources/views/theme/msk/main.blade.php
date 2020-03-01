@@ -20,9 +20,13 @@
                     <div class='signup rounded'>
                         <h5 class="text-center font-weight-light mb-4">Cotiza tu carga con nosotros.</h5>
                         <input name="nombre" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Nombre:' required />
+                        <span class="text-danger">{{ $errors->first('nombre') }}</span>
                         <input name="email" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Correo:' required/>
+                        <span class="text-danger">{{ $errors->first('email') }}</span>
                         <input name="telefono" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Teléfono:' required/>
+                        <span class="text-danger">{{ $errors->first('telefono') }}</span>
                         <textarea class="form-control form-control-sm semi-transparent mb-2" rows="3" name="mensaje" placeholder='Mensaje:' required></textarea>
+                        <span class="text-danger">{{ $errors->first('mensaje') }}</span>
                         <input class="form-control-sm btn btn-red" id="btn-contact" type='submit' placeholder='Enviar Mensaje' />
                     </div>
                     <div id="nuestros-servicios" ></div>
@@ -204,17 +208,12 @@
         <div class="col-4 back-persona"></div>
         <div class="col-8">
             <h2 class="text-center">Quienes somos</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum sed lorem vel pellentesque. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Donec tincidunt semper sapien ac ultrices. Sed eros nunc,
-            sagittis
-            at scelerisque eu, imperdiet eu libero. Nam et vulputate quam. Maecenas dictum lectus magna, a commodo augue
-            varius vitae. Phasellus auctor sodales mauris, nec volutpat nisl porta a. Maecenas at magna pellentesque,
-            elementum eros nec, blandit lacus. Nam laoreet, sem nec ultricies mattis, libero purus rutrum purus, et
-            tempus
-            ipsum est eget lacus. Quisque lectus tellus, blandit id arcu a, laoreet mattis sem. Donec scelerisque dolor
-            a
-            purus laoreet ultrices. Nam maximus dignissim est a aliquet. Suspendisse quis varius purus. Fusce tristique
-            faucibus mattis. Proin a volutpat velit. Aenean varius ante sit amet lacus elementum congue.</p>
+            <p>Transportes MSK E.I.R.L es una empresa de transporte de carga, 
+                enfocada principalmente al manejo de mercancías de exportación por carreteras de Chile.</p>
+            <p>
+                Nuestra empresa nace con la finalidad de entregar una solucione integral de transporte 
+                para aquellos que necesiten trasladar su carga a lo largo de todo el país. 
+            </p>
         </div>
     </div>
 </div>
@@ -246,9 +245,13 @@
                     <div class='signup rounded'>
                         <h5 class="text-center font-weight-light mb-4">Pongamonos en contacto</h5>
                         <input name="nombre" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Nombre:' required />
+                        <span class="text-danger">{{ $errors->first('nombre') }}</span>
                         <input name="email" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Correo:' required/>
+                        <span class="text-danger">{{ $errors->first('email') }}</span>
                         <input name="telefono" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Teléfono:' required/>
+                        <span class="text-danger">{{ $errors->first('telefono') }}</span>
                         <textarea class="form-control form-control-sm semi-transparent mb-2" rows="3" name="mensaje" placeholder='Mensaje:' required></textarea>
+                        <span class="text-danger">{{ $errors->first('mensaje') }}</span>
                         <input class="form-control-sm btn btn-red" id="btn-contact" type='submit' placeholder='Enviar Mensaje' />
                     </div>
                 </form>
