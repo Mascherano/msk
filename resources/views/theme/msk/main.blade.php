@@ -4,7 +4,7 @@
             <div class="col-md-6">
                 <h1 class="text-right">Transportes MSK</h1>
                 <h2 class="text-right">Servicios de Transporte por carretera.</h2>
-                <p class="text-right text-white">Fletes y mudanzas, Contactanos para saber más informacíon.</p>
+                <p class="text-right text-white">Fletes y mudanzas, Contactanos para conocer más informacíon.</p>
             </div>
             <div class="col-md-6 d-flex justify-content-center">
                 <form class="p-4 w-75" action={{route('contact')}} method="POST">
@@ -228,7 +228,7 @@
 <div id="carousel-formulario" class="carousel slide carousel-fade mt-4" data-ride="carousel" data-pause="false">
     <div id="form-contacto" class="container tm-banner-text-container-btm">
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
                 <h1 class="text-right">Cotiza tu carga o mudanza.</h1>
                 <h3 class="text-right">Cargas en general y Mudanzas en todo Chile</h3>
                 <p class="text-right text-white">Planifica tu mudanza o viaje y contactanos a través de las distintas opciones disponibles para ti.
@@ -240,7 +240,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-6 d-flex justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center">
                 <form class="p-4 w-75" action={{route('contact')}} method="POST">
                     {{ csrf_field() }}
                     <div class='signup rounded'>
