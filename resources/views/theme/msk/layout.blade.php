@@ -13,7 +13,6 @@
         <link href="{{asset("assets/$theme/css/bootstrap.min.css")}}" rel="stylesheet">
         <link rel="stylesheet" href="{{asset("assets/$theme/css/all.css")}}">
 
-
         <!-- Custom styles for this template -->
         <link href="{{asset("assets/$theme/css/style.css")}}" rel="stylesheet">
     </head>

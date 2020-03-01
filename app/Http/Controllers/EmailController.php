@@ -17,9 +17,10 @@ class EmailController extends Controller
             $msj->from($request->email, $request->nombre);
             $msj->subject($subject);
             $msj->to($for);
+
         });
 
-        return redirect()->back();
+        return redirect()->back()->withSuccess('Tu mensaje ha sido enviado correctamente. Pronto te contactaremos.');
 
     }
 }

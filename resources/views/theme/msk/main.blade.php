@@ -2,21 +2,28 @@
     <div class="container tm-banner-text-container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="text-right">Lorem ipsum dolor sit amet</h1>
-                <h2 class="text-right">consectetur adipiscing elit</h2>
-                <p class="text-right text-white">Morbi sagittis, ex vel pharetra tincidunt, mauris urna pretium sapien,
-                tincidunt porta risus dolor sed tortor. Fusce sollicitudin id turpis quis dictum.</p>
+                <h1 class="text-right">Transportes MSK</h1>
+                <h2 class="text-right">Servicios de Transporte por carretera.</h2>
+                <p class="text-right text-white">Fletes y mudanzas, Contactanos para saber más informacíon.</p>
             </div>
             <div class="col-md-6 d-flex justify-content-center">
-
                 <form class="p-4 w-75" action={{route('contact')}} method="POST">
                     {{ csrf_field() }}
+                    @if(Session::has('success'))
+                        <div class="alert alert-success alert-dismissible fade show"  role="alert">
+                            {{Session::get('success')}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    @endif
                     <div class='signup rounded'>
-                        <h5 class="text-center font-weight-light mb-4">¿Quieres saber más acerca de esta tecnología?</h5>
+                        <h5 class="text-center font-weight-light mb-4">Cotiza tu carga con nosotros.</h5>
                         <input name="nombre" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Nombre:' required />
                         <input name="email" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Correo:' required/>
                         <input name="telefono" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Teléfono:' required/>
-                        <input class="form-control-sm btn btn-red" id="btn-contact" type='submit' placeholder='Enviar' />
+                        <textarea class="form-control form-control-sm semi-transparent mb-2" rows="3" name="mensaje" placeholder='Mensaje:' required></textarea>
+                        <input class="form-control-sm btn btn-red" id="btn-contact" type='submit' placeholder='Enviar Mensaje' />
                     </div>
                     <div id="nuestros-servicios" ></div>
 
@@ -56,9 +63,9 @@
                         <div class="row">
                             <div class="col-12 text-left m-2">
                                 <ul class="lista texto-carta">
-                                    <li><i class="fa fa-check mr-2"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                    <li><i class="fa fa-check mr-2"></i>Quisque commodo mauris eu accumsan placerat.</li>
-                                    <li><i class="fa fa-check mr-2"></i>Pellentesque faucibus ante vel sem semper, quis eleifend mauris facilisis.</li>
+                                    <li><i class="fa fa-check mr-2"></i>Transporte de alimentos en ramplas frigoríficas</li>
+                                    <li><i class="fa fa-check mr-2"></i>Transporte de carga en ramplas cerradas</li>
+                                    <li><i class="fa fa-check mr-2"></i>Transporte de carga en rampla plana</li>
                                 </ul>
                             </div>
                         </div>
@@ -76,9 +83,9 @@
                         <div class="row">
                             <div class="col-12 text-left m-2">
                                 <ul class="lista texto-carta">
-                                    <li><i class="fa fa-check mr-2"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                    <li><i class="fa fa-check mr-2"></i>Quisque commodo mauris eu accumsan placerat.</li>
-                                    <li><i class="fa fa-check mr-2"></i>Pellentesque faucibus ante vel sem semper, quis eleifend mauris facilisis.</li>
+                                    <li><i class="fa fa-check mr-2"></i>Servicio de mudanzas en camión (3/4, rampla cerrada y plana)</li>
+                                    <li><i class="fa fa-check mr-2"></i>Servicio de mudanzas en todo chile.</li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -92,15 +99,40 @@
 <!-- START THE FEATURETTES -->
 <div class="container mt-5">
     <div id="galeria"></div>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum sed lorem vel pellentesque. Lorem ipsum
+    <div class="row">
+        <div class="col-md-2 text-center">
+            <i class="fas fa-check-circle fa-3x mb-2" style="color:#da0128"></i>
+            <p>Responsabilidad</p>
+        </div>
+        <div class="col-md-2 text-center">
+            <i class="fas fa-handshake fa-3x mb-2" style="color:#da0128"></i>
+            <p>Confianza</p>
+        </div>
+        <div class="col-md-2 text-center">
+            <i class="fas fa-clock fa-3x mb-2" style="color:#da0128"></i>
+            <p>Eficiencia</p>
+        </div>
+        <div class="col-md-2 text-center">
+            <i class="fas fa-user-check fa-3x mb-2" style="color:#da0128"></i>
+            <p>Conductores Calificados</p>
+        </div>
+        <div class="col-md-2 text-center">
+            <i class="fas fa-route fa-3x mb-2" style="color:#da0128"></i>
+            <p>Conocimiento de Rutas</p>
+        </div>
+        <div class="col-md-2 text-center">
+            <i class="fas fa-lock fa-3x mb-2" style="color:#da0128"></i>
+            <p>Seguridad</p>
+        </div>
+    </div>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum sed lorem vel pellentesque. Lorem ipsum
     dolor sit amet, consectetur adipiscing elit. Donec tincidunt semper sapien ac ultrices. Sed eros nunc, sagittis
     at scelerisque eu, imperdiet eu libero. Nam et vulputate quam. Maecenas dictum lectus magna, a commodo augue
     varius vitae. Phasellus auctor sodales mauris, nec volutpat nisl porta a. Maecenas at magna pellentesque,
     elementum eros nec, blandit lacus. Nam laoreet, sem nec ultricies mattis, libero purus rutrum purus, et tempus
     ipsum est eget lacus. Quisque lectus tellus, blandit id arcu a, laoreet mattis sem. Donec scelerisque dolor a
     purus laoreet ultrices. Nam maximus dignissim est a aliquet. Suspendisse quis varius purus. Fusce tristique
-    faucibus mattis. Proin a volutpat velit. Aenean varius ante sit amet lacus elementum congue.</p>
+    faucibus mattis. Proin a volutpat velit. Aenean varius ante sit amet lacus elementum congue.</p>-->
 </div>
 
 <div class="container-fluid mt-5">
@@ -171,6 +203,7 @@
     <div class="row">
         <div class="col-4 back-persona"></div>
         <div class="col-8">
+            <h2 class="text-center">Quienes somos</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum sed lorem vel pellentesque. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit. Donec tincidunt semper sapien ac ultrices. Sed eros nunc,
             sagittis
@@ -196,15 +229,14 @@
     <div id="form-contacto" class="container tm-banner-text-container-btm">
         <div class="row">
             <div class="col-6">
-                <h1 class="text-right">Lorem ipsum dolor sit amet</h1>
-                <h2 class="text-right">consectetur adipiscing elit</h2>
-                <p class="text-right text-white">Morbi sagittis, ex vel pharetra tincidunt, mauris urna pretium sapien,
-                    tincidunt porta risus dolor sed tortor. Fusce sollicitudin id turpis quis dictum.
+                <h1 class="text-right">Cotiza tu carga o mudanza.</h1>
+                <h3 class="text-right">Cargas en general y Mudanzas en todo Chile</h3>
+                <p class="text-right text-white">Planifica tu mudanza o viaje y contactanos a través de las distintas opciones disponibles para ti.
                 </p>
                 <div class="container-fluid d-flex justify-content-end m-0 p-0">
                     <ul class="lista-btm text-right">
-                        <li><i class="fa fa-phone mr-2 color-rojo"></i>+56 9 9876 5432</li>
-                        <li><i class="fa fa-envelope mr-2 color-rojo"></i>contacto@contactame.cl</li>
+                        <li><i class="fa fa-phone mr-2 color-rojo"></i>+56 9 8269 1910</li>
+                        <li><i class="fa fa-envelope mr-2 color-rojo"></i>contactomsk@gmail.com</li>
                     </ul>
                 </div>
             </div>
@@ -212,11 +244,12 @@
                 <form class="p-4 w-75" action={{route('contact')}} method="POST">
                     {{ csrf_field() }}
                     <div class='signup rounded'>
-                        <h5 class="text-center font-weight-light mb-4">¿Quieres saber más acerca de esta tecnología?</h5>
+                        <h5 class="text-center font-weight-light mb-4">Pongamonos en contacto</h5>
                         <input name="nombre" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Nombre:' required />
                         <input name="email" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Correo:' required/>
                         <input name="telefono" class="form-control form-control-sm semi-transparent mb-2" type='text' placeholder='Teléfono:' required/>
-                        <input class="form-control-sm btn btn-red" id="btn-contact" type='submit' placeholder='Enviar' />
+                        <textarea class="form-control form-control-sm semi-transparent mb-2" rows="3" name="mensaje" placeholder='Mensaje:' required></textarea>
+                        <input class="form-control-sm btn btn-red" id="btn-contact" type='submit' placeholder='Enviar Mensaje' />
                     </div>
                 </form>
 
