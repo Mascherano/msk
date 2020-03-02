@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
 
-        <a class="navbar-brand" href="/"><img src="{{asset("assets/$theme/images/msk_logo.png")}}" class="img-fluid w-75"></a>
+        <a class="navbar-brand" href="/"><img src="{{asset("assets/$theme/images/msk_logo.png")}}" class="img-fluid w-100"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

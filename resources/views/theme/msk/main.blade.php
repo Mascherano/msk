@@ -101,31 +101,31 @@
 </section>
 
 <!-- START THE FEATURETTES -->
-<div class="container mt-5">
+<div class="container mt-5 pt-5 pb-5">
     <div id="galeria"></div>
     <div class="row">
         <div class="col-md-2 text-center">
-            <i class="fas fa-check-circle fa-3x mb-2" style="color:#da0128"></i>
+            <i class="fas fa-check-circle fa-4x mb-2" style="color:#da0128"></i>
             <p>Responsabilidad</p>
         </div>
         <div class="col-md-2 text-center">
-            <i class="fas fa-handshake fa-3x mb-2" style="color:#da0128"></i>
+            <i class="fas fa-handshake fa-4x mb-2" style="color:#da0128"></i>
             <p>Confianza</p>
         </div>
         <div class="col-md-2 text-center">
-            <i class="fas fa-clock fa-3x mb-2" style="color:#da0128"></i>
+            <i class="fas fa-clock fa-4x mb-2" style="color:#da0128"></i>
             <p>Eficiencia</p>
         </div>
         <div class="col-md-2 text-center">
-            <i class="fas fa-user-check fa-3x mb-2" style="color:#da0128"></i>
+            <i class="fas fa-user-check fa-4x mb-2" style="color:#da0128"></i>
             <p>Conductores Calificados</p>
         </div>
         <div class="col-md-2 text-center">
-            <i class="fas fa-route fa-3x mb-2" style="color:#da0128"></i>
+            <i class="fas fa-route fa-4x mb-2" style="color:#da0128"></i>
             <p>Conocimiento de Rutas</p>
         </div>
         <div class="col-md-2 text-center">
-            <i class="fas fa-lock fa-3x mb-2" style="color:#da0128"></i>
+            <i class="fas fa-lock fa-4x mb-2" style="color:#da0128"></i>
             <p>Seguridad</p>
         </div>
     </div>
@@ -203,7 +203,7 @@
 </div>
 
 
-<div class="container mt-5">
+<div class="container mt-5 pt-5">
     <div class="row">
         <div class="col-4 back-persona"></div>
         <div class="col-8">
@@ -218,13 +218,13 @@
     </div>
 </div>
 
-<div class="row m-0 mt-4">
+<div class="row m-0 mt-5">
     <div class="col-6 offset-3">
         <div class="brdr-btm-red"></div>
     </div>
 </div>
 
-<div id="carousel-formulario" class="carousel slide carousel-fade mt-4" data-ride="carousel" data-pause="false">
+<div id="carousel-formulario" class="carousel slide carousel-fade mt-5" data-ride="carousel" data-pause="false">
     <div id="form-contacto" class="container tm-banner-text-container-btm">
         <div class="row">
             <div class="col-md-6">
