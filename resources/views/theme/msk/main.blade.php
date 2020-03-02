@@ -208,12 +208,12 @@
         <div class="col-4 back-persona"></div>
         <div class="col-8">
             <h2 class="text-center">Quienes somos</h2>
-            <p>Transportes MSK E.I.R.L es una empresa de transporte de carga, 
-                enfocada principalmente al manejo de mercancías de exportación por carreteras de Chile.</p>
-            <p>
-                Nuestra empresa nace con la finalidad de entregar una solucione integral de transporte 
+            <h4>Transportes MSK E.I.R.L es una empresa de transporte de carga, 
+                enfocada principalmente al manejo de mercancías de exportación por carreteras de Chile.</h4>
+            <h4>
+                Nuestra empresa nace con la finalidad de entregar una solucion integral de transporte 
                 para aquellos que necesiten trasladar su carga a lo largo de todo el país. 
-            </p>
+            </h4>
         </div>
     </div>
 </div>
