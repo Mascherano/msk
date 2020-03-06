@@ -4,7 +4,8 @@
             <div class="col-md-6">
                 <h1 class="text-right">Transportes MSK</h1>
                 <h2 class="text-right">Servicios de Transporte por carretera.</h2>
-                <p class="text-right text-white">Fletes y mudanzas, Contactanos para conocer más informacíon.</p>
+                <p class="text-right text-white">Fletes y mudanzas en todo Chile, Contactanos para conocer más informacíon.</p>
+                <p class="text-right text-white">Somos de Chillán al servicio de todo el país.</p>
             </div>
             <div class="col-md-6 d-flex justify-content-center">
                 <form class="p-4 w-75" action={{route('contact')}} method="POST">
@@ -40,7 +41,9 @@
     <div class="carousel-inner">
         <div class="carousel-item active slide-1"></div>
         <div class="carousel-item slide-2"></div>
+        <div class="carousel-item slide-5"></div>
         <div class="carousel-item slide-3"></div>
+        <div class="carousel-item slide-4"></div>
     </div>
 </div>
 
@@ -67,8 +70,8 @@
                         <div class="row">
                             <div class="col-12 text-left m-2">
                                 <ul class="lista texto-carta">
-                                    <li><i class="fa fa-check mr-2"></i>Transporte de alimentos en ramplas frigoríficas</li>
-                                    <li><i class="fa fa-check mr-2"></i>Transporte de carga en ramplas cerradas</li>
+                                    <li><i class="fa fa-check mr-2"></i>Transporte de carga en ramplas frigoríficas</li>
+                                    <li><i class="fa fa-check mr-2"></i>Transporte de carga en ramplas termo</li>
                                     <li><i class="fa fa-check mr-2"></i>Transporte de carga en rampla plana</li>
                                 </ul>
                             </div>
@@ -87,9 +90,9 @@
                         <div class="row">
                             <div class="col-12 text-left m-2">
                                 <ul class="lista texto-carta">
-                                    <li><i class="fa fa-check mr-2"></i>Servicio de mudanzas en camión (3/4, rampla cerrada y plana)</li>
+                                    <li><i class="fa fa-check mr-2"></i>Servicio de mudanzas en termo de 48 pies y rampla plana de 13, 50 mts.</li>
                                     <li><i class="fa fa-check mr-2"></i>Servicio de mudanzas en todo chile.</li>
-                                    
+                                    <li><i class="fa fa-check mr-2"></i>Nuestra empresa es de Chillán</li>
                                 </ul>
                             </div>
                         </div>
@@ -208,11 +211,16 @@
         <div class="col-4 back-persona"></div>
         <div class="col-8">
             <h2 class="text-center">Quienes somos</h2>
-            <h4>Transportes MSK E.I.R.L es una empresa de transporte de carga, 
-                enfocada principalmente al manejo de mercancías de exportación por carreteras de Chile.</h4>
+            <h4>
+                Transportes MSK E.I.R.L es una empresa de transporte de carga, 
+                enfocada principalmente al manejo de mercancías de exportación por carreteras de Chile.
+            </h4>
             <h4>
                 Nuestra empresa nace con la finalidad de entregar una solucion integral de transporte 
                 para aquellos que necesiten trasladar su carga a lo largo de todo el país. 
+            </h4>
+            <h4>
+                Nuestro servicio de transporte, fletes o mudanzas es exclusivo. Porque tu carga es importante para nosotros.  
             </h4>
         </div>
     </div>
@@ -235,7 +243,7 @@
                 <div class="container-fluid d-flex justify-content-end m-0 p-0">
                     <ul class="lista-btm text-right">
                         <li><i class="fa fa-phone mr-2 color-rojo"></i>+56 9 8269 1910</li>
-                        <li><i class="fa fa-envelope mr-2 color-rojo"></i>contactomsk@gmail.com</li>
+                        <li><i class="fa fa-envelope mr-2 color-rojo"></i>mskmudanzas@gmail.com</li>
                     </ul>
                 </div>
             </div>
