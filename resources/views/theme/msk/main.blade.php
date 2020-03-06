@@ -72,7 +72,7 @@
                                 <ul class="lista texto-carta">
                                     <li><i class="fa fa-check mr-2"></i>Transporte de carga en ramplas frigoríficas</li>
                                     <li><i class="fa fa-check mr-2"></i>Transporte de carga en ramplas termo</li>
-                                    <li><i class="fa fa-check mr-2"></i>Transporte de carga en rampla plana</li>
+                                    <li><i class="fa fa-check mr-2"></i>Transporte de carga en rampla plana de 13,50 mts. Todo tipo de carga</li>
                                 </ul>
                             </div>
                         </div>
