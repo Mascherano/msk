@@ -242,7 +242,8 @@
                 </p>
                 <div class="container-fluid d-flex justify-content-end m-0 p-0">
                     <ul class="lista-btm text-right">
-                        <li><i class="fa fa-phone mr-2 color-rojo"></i>+56 9 8269 1910</li>
+                        <li><i class="fa fa-phone mr-2 color-rojo"></i>+56 9 3917 5399</li>
+                        <li><i class="fa fa-phone mr-2 color-rojo"></i>+56 9 7849 3214</li>
                         <li><i class="fa fa-envelope mr-2 color-rojo"></i>mskmudanzas@gmail.com</li>
                     </ul>
                 </div>

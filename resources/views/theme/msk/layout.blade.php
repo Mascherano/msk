@@ -4,8 +4,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Transportes MSK es una empresa de transporte de carga por carretera. Cotiza tus fletes o mudanzas con nosotros.">
-        <meta name="keywords" content="Mudanzas, fletes, Transporte de carga, Transportes, Camiones, Carretera, carretera Chile, region de nuble, Transportes MSK">
+        <meta name="description" content="Transportes MSK E.I.R.L empresa ubicada en Chillán, Ñuble. Somos una empresa de transporte de carga por carretera. Cotiza tus fletes o mudanzas con nosotros.">
+        <meta name="keywords" content="Mudanzas, fletes, Transporte de carga, Transportes, Camiones, Carretera, carretera Chile, region de ñuble, Transportes MSK, Chillán, Ñuble, empresa de chillán, cotiza fletes, cotiza mudanzas">
         <meta name="author" content="Transportes MSK | Marcelo A. González Cartes">
         <meta name="copyright" content="Transportes MSK" />
         <meta name="robots" content="index"/>
